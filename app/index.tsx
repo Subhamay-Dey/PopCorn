@@ -8,6 +8,14 @@ export default function Index() {
         Welcome!
       </Text>
       <Link href={"/onboarding"}>Onboarding</Link>
+      <Link
+        href={{
+          pathname: "/movie/[id]",
+          params: { id: "avengers" },
+        }}
+      >
+        Avengers
+      </Link>
     </View>
   );
 }
