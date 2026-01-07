@@ -10,7 +10,7 @@ export default function Index() {
       <Link href={"/onboarding"}>Onboarding</Link>
       <Link
         href={{
-          pathname: "/movie/[id]",
+          pathname: "/movies/[id]",
           params: { id: "avengers" },
         }}
       >
