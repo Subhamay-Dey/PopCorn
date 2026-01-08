@@ -1,6 +1,7 @@
-import { View, Text } from 'react-native'
+import { View, Text, ImageBackground, Image } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
+import { images } from '@/constants/images'
 
 const _layout = () => {
   return (
@@ -10,6 +11,16 @@ const _layout = () => {
             options={{
                 title: "Home",
                 headerShown: false,
+                tabBarIcon: ({focused}) => (
+                  <>
+                    <ImageBackground
+                      source={images.highlight}
+                      className='flex flex-row w-full'
+                    >
+                      <Image source={images.home} tintColor="#151312" className='size-5'/>
+                    </ImageBackground>
+                  </>
+                )
             }}
         />
         <Tabs.Screen
