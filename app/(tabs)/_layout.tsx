@@ -9,8 +9,7 @@ const TabIcon = ({focused, icon, tab}: {icon: ImageSourcePropType, tab: string, 
 
   const props = {icon, tab}
 
-  if (!focused) {
-
+  if (focused) {
     return (
       <ImageBackground
         source={images.highlight}
@@ -21,6 +20,12 @@ const TabIcon = ({focused, icon, tab}: {icon: ImageSourcePropType, tab: string, 
       </ImageBackground>
     )
   }
+
+  return (
+    <View className='size-full justify-center items-center mt-4 rounded-full'>
+      <Image source={props.icon} tintColor="#A8B5DB" className='size-5'/>
+    </View>
+  )
 
 }
 
