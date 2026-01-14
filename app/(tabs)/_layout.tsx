@@ -3,7 +3,7 @@ import React from 'react'
 import { Tabs } from 'expo-router'
 import { images } from '@/constants/images'
 import { icons } from '@/constants/icons'
-import search from './search'
+import search from './search';
 
 const TabIcon = ({focused, icon, tab}: {icon: ImageSourcePropType, tab: string, focused: any}) => {
 
