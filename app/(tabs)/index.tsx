@@ -14,7 +14,7 @@ export default function Index() {
           params: { id: "avengers" },
         }}
       >
-        Avenger
+        Avengers
       </Link>
     </View>
   );
