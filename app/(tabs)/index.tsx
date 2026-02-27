@@ -11,7 +11,7 @@ export default function Index() {
       <Link
         href={{
           pathname: "/movies/[id]",
-          params: { id: "avengers" },
+          params: { id: "avengers" }
         }}
       >
         Avengers
